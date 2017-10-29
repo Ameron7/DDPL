@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px 32px;
+                margin:0;
+            }
+            
+            .parallax {
+                /* The image used */
+                background-image: url("image/apotek.jpg");
+
+                /* Set a specific height */
+                min-height: 500px; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 20px
+                margin:0;
+            }
+            .tentang {
+                width: 90%;
+                margin: 1.0em auto;
+                background: #fff;
+            }
+            
+            .text {
+                margin-left: 155px
+            }
+            
+            .center {
+                width: 50%;
+                text-align: center;
+                margin: 1.0cm auto;
+                border: 3px solid #73AD21;
+                padding: 10px;
+            }
+            
+            html {
+                box-sizing: border-box;
+            }
+            
+            body { 
+                font-family: Verdana, Tahoma, sans-serif;
+                margin:0;
+            }
+            
+            *, *:before, *:after {
+              box-sizing: inherit;
+            }
+
+            .column {
+              float: left;
+              width: 33.3%;
+              margin-bottom: 16px;
+            }
+
+            @media (max-width: 650px) {
+              .column {
+                width: 100%;
+                display: block;
+              }
+            }
+
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .container {
+              padding: 0 16px;
+            }
+
+            .container::after, .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .title {
+              color: grey;
+            }
+            
+            </style>
+    </head>
+    <body> 
+        <h1>Tentang Kami</h1>
+        <div class="tentang">
+            <div class="clearfix"><img src="image/logo.jpg" alt="Akmal" style="width:25%; float:right; border-radius: 10%;">
+            <h2 style= "width: 70%; text-align: center; border: 3px solid #73AD21; padding: 10px"><i>"Sehat tidak perlu mahal"</i></h2>
+            <p style= "width: 70%;"> Mel Medica adalah salah satu perusahaan yang bergerak di bidang farmasi di Indonesia. Mel Medica merupakan perusahaan baru yang terus berkembang untuk maju dan memberikan yang terbaik untuk masyarakat Indonesia dalam bidang farmasi.
+            <br>
+            <br>
+            Mel Medica menyediakan layanan berbagai macam obat-obatan dengan harga relatif lebih murah daripada harga di apotek pada umumnya. Dengan mengemban tujuan mulia yaitu mewujudkan sehat tidak perlu mahal, Mel Medica senantiasa hadir untuk solusi yang tepat untuk menjadi partner kesehatan seluruh keluarga di Indonesia. </p>
+            </div>
+        </div>
+            <div class="parallax"></div>
+
+        
+        <div class="tentang">    
+            <h2 style="color: #4CAF50">Jam Buka</h2>
+            <hr>
+            <br>
+
+            <div class="row" >
+              <div class="column" style="padding: 0px 20px; background-color: #ddffdd; border-left: 6px solid darkgreen; width: 50%;">
+                <h2 style="color: darkgreen">Senin - Jumat</h2>
+                <h3 style="text-align: right">07:00 - 21:00 WIB</h3>
+              </div>
+              <div class="column" style="padding: 0px 20px; background-color: #e7f3fe; border-left: 6px solid #2196F3; width: 50%;">
+                <h2 style="color: #2196F3";>Sabtu - Minggu</h2>
+                <h3 style="text-align: right">09:00 - 20:00 WIB</h3>
+              </div>
+            </div>
+            
+            
+            <h2 style="color: #4CAF50">Tim Mel-Medica</h2>
+            <hr>
+            <br>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="image/team1.jpg" alt="Akmal" style="width:100%">
+                  <div class="container">
+                    <h2>Akmal</h2>
+                    <p class="title">Pemilik</p>
+                    <p>Telp: 08xxxxxxx</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="image/team2.jpg" alt="Maritza" style="width:100%">
+                  <div class="container">
+                    <h2>Maritza</h2>
+                    <p class="title">Dokter</p>
+                    <p>Telp: 08xxxxxxx</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="image/team3.jpg" alt="Gienzka" style="width:100%">
+                  <div class="container">
+                    <h2>Gienzka</h2>
+                    <p class="title">Apoteker</p>
+                    <p>Telp: 08xxxxxxx</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
